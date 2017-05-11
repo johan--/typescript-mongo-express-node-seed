@@ -7,19 +7,66 @@
 </head>
 <body>
 
-<div style="height: 20px; background: red">
-</div>
-
-<header>
-<% include ../partials/header %>
-</header>
 
 <main>
-<div class="jumbotron">
-<h1>This is great</h1>
-<p>Welcome to templating using EJS</p>
+
+<div class="article">
+
+<h1>What's up with Angular Universal?</h1>
+<p>I was excited when I heard Angular2 would support Server-Side rendering with since SEO was a huge
+PITA (pain in the ass) with Angular1. It was said this would be done with Angular Universal.
+</p>
+
+<p>
+Yet, this Angular Universal thing however, what's up with that? Seems to have a really small team on that
+and not too much documentation. Well at least there's a getting started repo, so I thought.
+However, this repo
+(<a href="https://github.com/robwormald/ng-universal-demo">https://github.com/robwormald/ng-universal-demo</a>)
+doesn't even have a readme!
+</p>
+
+<p>
+Also, when you check out some of those files, they don't seem very professional. For example:
+<a href="https://github.com/robwormald/ng-universal-demo/blob/master/src/express-engine.ts">https://github.com/robwormald/ng-universal-demo/blob/master/src/express-engine.ts</a>
+</p>
+
+<p>
+First line of code: "
+//hacky express wrapper thingy.
+</p>
+
+<img src="http://res.cloudinary.com/taskbase/image/upload/v1494503825/Screen_Shot_2017-05-11_at_13.55.38_efpc2g.png"
+     alt="Screenshot of 'Hacky Express Wrapper Thingy'">
+
+<p>
+Seriously?
+</p>
+
+<p>
+Then of course, there's also some confusion as to where to go and look for resources. You'll find quite a few:
+
+
+<ul>
+<li><a href="https://github.com/angular/universal/issues">https://github.com/angular/universal/issues</a></li>
+<li><a href="https://github.com/angular/universal">https://github.com/angular/universal</a></li>
+<li><a href="https://github.com/angular/universal-starter">https://github.com/angular/universal-starter</a></li>
+<li><a href="https://universal.angular.io/">https://universal.angular.io/</a></li>
+</ul>
+
+But only half of them is really supported and up to date...
+
+</p>
+
+
+<p>
+Well, I guess switching to React isn't such a bad idea after all?
+</p>
+
+
 </div>
+
 </main>
+
 
 <footer>
 <% include ../partials/footer %>
