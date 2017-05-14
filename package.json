@@ -6,7 +6,8 @@
   "scripts": {
     "test": "mocha --reporter spec --compilers ts:ts-node/register '**/*.test.ts'",
     "start": "tsc && node dist/index.js",
-    "spec": "mocha --reporter spec --compilers ts:ts-node/register --grep ${TEST} '**/*.test.ts'"
+    "spec": "mocha --reporter spec --compilers ts:ts-node/register --grep ${TEST} '**/*.test.ts'",
+    "forever": "tsc && forever start dist/index.js"
   },
   "author": "Daniel Niederberger <bersling@gmail.com>",
   "license": "MIT",

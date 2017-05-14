@@ -21,7 +21,7 @@ scp backend.zip "${server}:~"
 
 ssh ${server} "rm -rf backend"
 ssh ${server} "unzip backend.zip"
-ssh ${server} "cd backend && npm install"
+ssh ${server} "cd backend && npm install && npm run forever"
 
 echo ""
 echo "---------------------------------"
